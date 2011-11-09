@@ -1,0 +1,16 @@
+<!DOCTYPE html PUBLIC "-//W3C//DTD HTML 4.01 Transitional//EN" "http://www.w3.org/TR/html4/loose.dtd">
+<html>
+    <head>
+        <title>#{get 'title' /}</title>
+        <meta charset="utf-8" /> 
+        <script src="@{'/public/javascripts/jlz-0.1.js'}" 
+          type="text/javascript" charset="${_response_encoding}"></script>
+        #{stylesheet media:'screen', src:'tab.css' /}
+        #{get 'moreScripts'/}
+    </head>
+    <body>
+      <div class="tab">
+        #{doLayout /}      
+      </div> 
+    </body>
+</html>

@@ -6,3 +6,4 @@ eclipse/
 test/
 tmp/
 modules/
+.DS_Store

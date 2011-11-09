@@ -2,8 +2,12 @@
 # This file defines all application routes (Higher priority routes first)
 # ~~~~
 
-# Home page
-GET     /                                       Application.index
+# Facebook tab
+# They send HTTP-POST
+*       /tab/?                                     Tab.index
+
+# Facebook app
+*       /app/?                                     App.index
 
 # Ignore favicon requests
 GET     /favicon.ico                            404
@@ -15,4 +19,4 @@ GET     /public/                                staticDir:public
 *		/admin           module:crud
 
 # Catch all
-*       /{controller}/{action}                  {controller}.{action}
+#*       /{controller}/{action}                  {controller}.{action}
