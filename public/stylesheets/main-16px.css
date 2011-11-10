@@ -167,6 +167,19 @@ footer .link.first {
   padding-left: 0px;
 }
 
+/* index page*/
+#index-main {
+  padding-right: 20px;
+  float: left;
+  width: 466px;
+}
+
+#index-right {
+  padding-left: 20px;
+  width: 142px;
+  float: right;
+}
+
 
 /*		Mobile Layout: 320px.
 		Gutters: 24px.
