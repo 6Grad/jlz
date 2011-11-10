@@ -2,5 +2,13 @@
 # For example, for French create a messages.fr file
 #
 
+#app specific
+app.header-title=Jedes Liken zählt
+
+
+#page titles
 app.index.title=Willkommen bei "Jedes Liken Zählt"
 tab.index.title=Willkommen bei "Jedes Liken Zählt"
+
+
+

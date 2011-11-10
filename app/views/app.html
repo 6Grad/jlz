@@ -1,5 +1,4 @@
 <!DOCTYPE html>
-
 <html lang="de">
     <head>
         <title>#{get 'title' /}</title>
@@ -10,11 +9,10 @@
           <script src="http://html5shim.googlecode.com/svn/trunk/html5.js"></script>
         <![endif]-->
         
-        
         <link rel="stylesheet" media="screen" href="@{'/public/stylesheets/main-16px.css'}">
         #{get 'moreStyles' /}
         <link rel="shortcut icon" type="image/png" href="@{'/public/images/fb-icon.png'}">
-        <script src="@{'/public/javascripts/jquery-1.5.2.min.js'}" type="text/javascript" charset="${_response_encoding}"></script>
+        <script src="@{'/public/javascripts/jquery-1.5.2.min.js'}" type="text/javascript" charset="utf-8"></script>
         #{get 'moreScripts' /}
     </head>
     <body>
@@ -42,8 +40,19 @@
            d.getElementsByTagName('head')[0].appendChild(js);
          }(document));
       </script>
-    
-        #{doLayout /}
-        
+      <div id="wrapper">
+        <header>
+          <a href="@@{App.index()}">
+            <img id="logo" src="@{'/public/images/logo.png'}"/>
+          </a>
+          <h3 class="title">
+            &{'app.header-title'}
+          </h3>
+        </header>
+        <div id="content">
+          #{doLayout /}
+        </div>
+        <footer> some nice footer </footer>
+      </div>        
     </body>
 </html>
