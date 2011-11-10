@@ -2,10 +2,23 @@
 #{set title:messages.get('app.index.title') /}
 
 <div id="index-main">
- <article>
-   some dummy stuff
- </article>
+  #{list items:1..9}
+  <div class="org-holder">
+    <div class="org-box gradient-grey">
+      <div class="title small">Organisation</div>
+      <div class="logo-outer">
+        <img class="logo" src="@{'/public/images/org-logo-test.png'}"/>
+      </div>
+    </div>
+    <div class="org-fb-outer">
+      <p class="small">x People like this<p>
+    </div>
+  </div>
+  #{/list}
+  <div style="clear;both"></div>
 </div>
+
+<!-- right side pane -->
 <div id="index-right">
   search and so on..
 </div>

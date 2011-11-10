@@ -109,13 +109,9 @@ body {
   margin: 0 auto;
   width: 688px;
   height: 760px;
-  background: #999; /* for non-css3 browsers */
   position: relative;
-  /*cross browser gradients*/
-  background: -moz-linear-gradient(top,  #e7eff7,  #ffffff);
-  background: -webkit-gradient(linear, left top, left bottom, from(#e7eff7), to(#ffffff)); /* for webkit browsers */
-  filter: progid:DXImageTransform.Microsoft.gradient(startColorstr='#e7eff7', endColorstr='#000000'); /* for IE */
-  /*and shadows*/
+  
+  /* shadows*/
   box-shadow:5px 5px 7px #555;
   -moz-box-shadow:5px 5px 7px #555;
   -webkit-box-shadow:5px 5px 7px #555;
@@ -147,10 +143,7 @@ footer {
   width: inherit;
   position: absolute;
   bottom: 0px;
-  /*cross browser gradients*/
-  background: -moz-linear-gradient(bottom,  #d4d4d4,  #ffffff);
-  background: -webkit-gradient(linear, left top, left bottom, from(#e7eff7), to(#ffffff)); /* for webkit browsers */
-  filter: progid:DXImageTransform.Microsoft.gradient(startColorstr='#e7eff7', endColorstr='#000000'); /* for IE */
+  
 }
 
 footer .footer-inner {
@@ -167,17 +160,66 @@ footer .link.first {
   padding-left: 0px;
 }
 
+/*some gradients*/
+.gradient-grey {
+  background: -moz-linear-gradient(bottom,  #d4d4d4,  #ffffff);
+  background: -webkit-gradient(linear, left bottom, left top, from(#d4d4d4), to(#ffffff)); /* for webkit browsers */
+  filter: progid:DXImageTransform.Microsoft.gradient(startColorstr='#d4d4d4', endColorstr='#ffffff'); /* for IE */
+}
+
+.gradient-cyan {
+  background: #ffffff; /* for non-css3 browsers */
+  background: -moz-linear-gradient(top,  #e7eff7,  #ffffff);
+  background: -webkit-gradient(linear, left top, left bottom, from(#e7eff7), to(#ffffff)); /* for webkit browsers */
+  filter: progid:DXImageTransform.Microsoft.gradient(startColorstr='#e7eff7', endColorstr='#ffffff'); /* for IE */
+}
+
+
 /* index page*/
 #index-main {
-  padding-right: 20px;
+  padding-right: 0px;
   float: left;
-  width: 466px;
+  width: 486px;
 }
 
 #index-right {
-  padding-left: 20px;
-  width: 142px;
+  width: 162px;
   float: right;
+}
+
+#index-main .org-holder {
+  width: 162px;
+  height: 180px;
+  float: left;
+}
+
+.org-holder .org-box {
+  height: 122px;
+  width: 122px;
+  border: 1px solid rgba(0,0,0,0.2);
+  -moz-box-shadow:5px 5px 5px #555;
+}
+
+.org-box .title {
+  padding-top: 5px;
+  font-style: bold;
+  text-align: center;
+}
+.org-box .logo-outer {
+  height: 80px;
+  width: 80px;
+  margin: auto;
+  position: relative;
+}
+
+.logo-outer img {
+  position: absolute;
+  left: 15px;
+  top: 15px;
+}
+
+.org-holder .org-fb-outer {
+  padding: 5px 40px 0px 5px;
 }
 
 
