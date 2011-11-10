@@ -98,7 +98,6 @@ body {
   background: rgb(232, 232, 232);
   color: rgb(60, 60, 60);
   -webkit-text-size-adjust: 100%;
-  min-height: 100%;
   /* Stops Mobile Safari from auto-adjusting font-sizes */
 }
 

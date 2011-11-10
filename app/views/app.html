@@ -18,6 +18,32 @@
         #{get 'moreScripts' /}
     </head>
     <body>
+      <div id="fb-root"></div>
+      <script type="text/javascript">
+        window.fbAsyncInit = function() {
+          FB.init({
+            appId      : '241925899195420', // App ID
+            status     : true, // check login status
+            cookie     : true, // enable cookies to allow the server to access the session
+            oauth      : true, // enable OAuth 2.0
+            xfbml      : false  // parse XFBML
+          });
+      
+          //channelURL : '//WWW.YOUR_DOMAIN.COM/channel.html', // Channel File (optional)
+          // Additional initialization code here
+          FB.Canvas.setSize({height: '1000px'});
+        };
+      
+        // Load the SDK Asynchronously
+        (function(d){
+           var js, id = 'facebook-jssdk'; if (d.getElementById(id)) {return;}
+           js = d.createElement('script'); js.id = id; js.async = true;
+           js.src = "http://connect.facebook.net/en_US/all.js";
+           d.getElementsByTagName('head')[0].appendChild(js);
+         }(document));
+      </script>
+    
         #{doLayout /}
+        
     </body>
 </html>

@@ -4,10 +4,11 @@
 
 # Facebook tab
 # They send HTTP-POST
-*       /tab/?                                     Tab.index
+*       /tab/?                                  Tab.index
 
 # Facebook app
-*       /app/?                                     App.index
+*       /app/?                                  App.index
+*		/channel								App.channel				
 
 # Ignore favicon requests
 GET     /favicon.ico                            404
