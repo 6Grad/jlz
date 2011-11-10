@@ -26,6 +26,10 @@ a img {
   border: 0;
 }
 
+a {
+  text-decoration: none;
+}
+
 /*	Typography presets
 	------------------	*/
 .gigantic {
@@ -106,6 +110,7 @@ body {
   width: 688px;
   height: 760px;
   background: #999; /* for non-css3 browsers */
+  position: relative;
   /*cross browser gradients*/
   background: -moz-linear-gradient(top,  #e7eff7,  #ffffff);
   background: -webkit-gradient(linear, left top, left bottom, from(#e7eff7), to(#ffffff)); /* for webkit browsers */
@@ -116,7 +121,7 @@ body {
   -webkit-box-shadow:5px 5px 7px #555;
 }
 
-#content, header, footer {
+#content, header {
   margin: 0 auto;
   width: 648px;
   position: relative;
@@ -127,7 +132,7 @@ header {
   height: 66px;
 }
 
-header #logo {
+header .logo {
   position: absolute;
 }
 
@@ -135,6 +140,31 @@ header .title {
   text-align: center;
   padding-top: 14px;
   color: #065d9c;
+}
+
+footer {
+  height: 64px;
+  width: inherit;
+  position: absolute;
+  bottom: 0px;
+  /*cross browser gradients*/
+  background: -moz-linear-gradient(bottom,  #d4d4d4,  #ffffff);
+  background: -webkit-gradient(linear, left top, left bottom, from(#e7eff7), to(#ffffff)); /* for webkit browsers */
+  filter: progid:DXImageTransform.Microsoft.gradient(startColorstr='#e7eff7', endColorstr='#000000'); /* for IE */
+}
+
+footer .footer-inner {
+  padding: 20px;
+}
+
+footer .link {
+  color: rgb(60, 60, 60);
+  font-style: italic;
+  padding-left: 10px;
+}
+
+footer .link.first {
+  padding-left: 0px;
 }
 
 

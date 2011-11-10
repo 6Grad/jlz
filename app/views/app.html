@@ -43,7 +43,7 @@
       <div id="wrapper">
         <header>
           <a href="@@{App.index()}">
-            <img id="logo" src="@{'/public/images/logo.png'}"/>
+            <img class="logo" src="@{'/public/images/logo.png'}"/>
           </a>
           <h3 class="title">
             &{'app.header-title'}
@@ -52,7 +52,14 @@
         <div id="content">
           #{doLayout /}
         </div>
-        <footer> some nice footer </footer>
+        <footer>
+          <div class="footer-inner">
+            <a class="link first small" href="#">Über uns</a>
+            <a class="link small" href="#">Roger</a>
+            <a class="link small" href="#">Cédric</a>
+            <a class="link small" href="#">Über uns</a>
+          </div>
+        </footer>
       </div>        
     </body>
 </html>
