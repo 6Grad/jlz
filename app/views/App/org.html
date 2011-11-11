@@ -1,5 +1,6 @@
 #{extends 'app.html' /}
 #{set title:messages.get('app.details.title') /}
+#{set noFooter:'' /}
 
 <script type="text/javascript">
 	$(document).ready(function() {
@@ -12,7 +13,7 @@
 <div id="org">
   <div class="big title">${o.name}</div>
   <div class="org-holder">
-    <div class="box logo gradient-grey">
+    <div class="logo gradient-grey shadow">
       <div class="logo-inner">
         <img src="@{'/public/images/org-logo-test.png'}"/>
       </div>
@@ -38,10 +39,20 @@
     
     <div style="clear: both;"></div>
     
-    <div class="tab-content gradient-grey">
+    <div class="tab-content gradient-lgrey shadow">
         ${o.description}
     </div>
   </div>
-
+  
+  <div style="clear: both;"></div>
+  
+  <div class="banner small gradient-lgrey shadow">
+    Gefällt dir die Organisation? Unterstütze Sie indem du sie bekannter machst und ins Gespräch bringst!
+  </div>
+  
+  <div id="share">
+    Share some stuff on Facebook
+  </div>
+  <button class="button small" style="float:right">Share</button>
 
 </div>
