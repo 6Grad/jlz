@@ -340,6 +340,24 @@ footer .link.first {
   position: relative;
   left: -40px;
   margin-top: 20px;
+  text-align: center;
+}
+
+#corner-left, #corner-right {
+  width: 15px;
+  height: 10px;
+  position: absolute;
+  bottom: -10px;  
+}
+
+#org .banner #corner-left {
+  background: url('../images/corner-left.png');
+  left: 0px;
+}
+
+#org .banner #corner-right {
+  background: url('../images/corner-right.png') no-repeat -10px 0px;
+  right: 0px;
 }
 
 #org #share {
