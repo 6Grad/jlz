@@ -110,11 +110,11 @@ body {
   width: 688px;
   height: 760px;
   position: relative;
-  
+  border: 1px solid white;
   /* shadows*/
-  box-shadow:5px 5px 7px #555;
-  -moz-box-shadow:5px 5px 7px #555;
-  -webkit-box-shadow:5px 5px 7px #555;
+  box-shadow:0px 5px 7px rgba(0,0,0,0.17);
+  -moz-box-shadow:0px 5px 7px rgba(0,0,0,0.17);
+  -webkit-box-shadow:0px 5px 7px rgba(0,0,0,0.17);
 }
 
 #content, header {
@@ -197,7 +197,9 @@ footer .link.first {
   height: 122px;
   width: 122px;
   border: 1px solid rgba(0,0,0,0.2);
-  -moz-box-shadow:5px 5px 5px #555;
+  box-shadow: 0px 5px 5px rgba(0,0,0,0.11);
+  -moz-box-shadow: 0px 5px 5px rgba(0,0,0,0.11);
+  -webkit-box-shadow: 0px 5px 5px rgba(0,0,0,0.11);
 }
 
 .org-box .title {
