@@ -1,5 +1,7 @@
 package controllers;
 
+import java.util.List;
+
 import models.Organization;
 
 import com.sun.xml.internal.messaging.saaj.packaging.mime.Header;
@@ -16,7 +18,10 @@ public class App extends Controller {
 
   /* entry */
   public static void index() {
-    render();
+    
+    List<Organization> orgs = Organization.all().fetch(9); 
+    
+    render(orgs);
   }
   
   /* Details*/
@@ -26,6 +31,11 @@ public class App extends Controller {
       error("org not found");
     }
     render(o);
+  }
+  
+  /* Donate */
+  public static void donate() {
+    
   }
   
   /* About u*/

@@ -2,14 +2,16 @@
 #{set title:messages.get('app.index.title') /}
 
 <div id="index-main">
-  #{list items:1..9}
+  #{list items:orgs, as:'o'}
   <div class="org-holder">
-    <div class="org gradient-grey shadow">
-      <div class="title small">Organisation</div>
-      <div class="logo-outer">
-        <img class="logo" src="@{'/public/images/org-logo-test.png'}"/>
+    <a href="@{App.org(o.id)}">
+      <div class="org gradient-grey shadow">
+        <div class="title small">${o.name}</div>
+        <div class="logo-outer">
+          <img class="logo" src="@{'/public/images/org-logo-test.png'}"/>
+        </div>
       </div>
-    </div>
+    </a>
     <div class="org-fb-outer">
       <p class="small">x People like this<p>
     </div>
