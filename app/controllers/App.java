@@ -28,6 +28,11 @@ public class App extends Controller {
     render(o);
   }
   
+  /* About u*/
+  public static void about() {
+    render();
+  }
+  
 
   /**
    * server facebook js api.
