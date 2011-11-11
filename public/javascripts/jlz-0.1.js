@@ -12,7 +12,7 @@
   this.switchTab = function (el) {
     var tabEl = $(el);
    
-    $('.tab',tabEl.parent()).each(function (index) {
+    $('.tab.active',tabEl.parent()).each(function (index) {
       $(this).removeClass('active');
     });
     
