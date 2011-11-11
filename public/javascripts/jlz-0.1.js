@@ -1,7 +1,7 @@
-(function () {
+(function (w) {
   
   /*our name in global namespace*/
-  window.jlz = this;
+  w.jlz = this;
   
   
   /*public stuff*/
@@ -9,4 +9,15 @@
     window.open(url);
   }
   
-})();
+  this.switchTab = function (el) {
+    var tabEl = $(el);
+   
+    $('.tab',tabEl.parent()).each(function (index) {
+      $(this).removeClass('active');
+    });
+    
+    tabEl.addClass('active');
+    
+  }
+  
+}(window));

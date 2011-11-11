@@ -8,6 +8,7 @@
 
 # Facebook app
 *       /app/?                                  App.index
+*		/org/{orgId}							App.org
 *		/channel								App.channel				
 
 # Ignore favicon requests
@@ -20,4 +21,4 @@ GET     /public/                                staticDir:public
 *		/admin           module:crud
 
 # Catch all
-#*       /{controller}/{action}                  {controller}.{action}
+*       /{controller}/{action}                  {controller}.{action}

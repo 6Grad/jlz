@@ -1,0 +1,47 @@
+#{extends 'app.html' /}
+#{set title:messages.get('app.details.title') /}
+
+<script type="text/javascript">
+	$(document).ready(function() {
+	  $('.tab').click(function() {
+	    jlz.switchTab(this);
+	  });
+	});
+</script>
+
+<div id="org">
+  <div class="big title">${o.name}</div>
+  <div class="org-holder">
+    <div class="box logo gradient-grey">
+      <div class="logo-inner">
+        <img src="@{'/public/images/org-logo-test.png'}"/>
+      </div>
+    </div>
+    
+    <div class="org-fb-outer">
+      <p class="small">x People like this<p>
+      <div class="fb-like">
+       I Like ;-)
+      </div>
+    </div>
+    
+    <button class="button small">Spenden</button>
+    
+    
+  </div>
+  
+  <div class="desc-holder">
+    <ul class="tabs">
+      <li class="tab medium first active">Info</li>
+      <li class="tab medium ">Aktuelles Projekt</li>
+    </ul>
+    
+    <div style="clear: both;"></div>
+    
+    <div class="tab-content gradient-grey">
+        ${o.description}
+    </div>
+  </div>
+
+
+</div>
